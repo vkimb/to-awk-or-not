@@ -1,5 +1,4 @@
 gawk
 vim
 nano
-emacs
 mc
