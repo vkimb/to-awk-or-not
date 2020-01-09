@@ -1,0 +1,66 @@
+=================
+1.Simple examples
+=================
+.. |br| raw:: html
+
+    <br>
+
+.. _Github: https://github.com/
+
+You can download most of the example data and scripts from Github_
+
+.. code-block:: console
+  
+   $ git clone --depth=1 https://github.com/pmitev/to-awk-or-not.git
+
+Simple example
+--------------
+
+It is quite easy to use Awk from the command line to perform simple operations on text files. |br|
+Suppose we have a file named "coins.txt" that describes a coin collection. Each line in the file contains the following information:
+
+The file has the contents:
+
+.. literalinclude:: ../01.Simple_examples/coins.txt
+  :language: text
+
+The command bellow will search through the file for lines of text that contain the string "gold", and print them out.
+
+.. code-block:: bash
+
+  $ awk '/gold/' coins.txt
+
+::
+
+   gold     1    1986  USA                 American Eagle
+   gold     1    1908  Austria-Hungary     Franz Josef 100 Korona
+   gold     1    1984  Switzerland         ingot
+   gold     1    1979  RSA                 Krugerrand
+   gold     0.5  1981  RSA                 Krugerrand
+   gold     0.1  1986  PRC                 Panda
+   gold     0.25 1986  USA                 Liberty 5-dollar piece
+   gold     0.25 1987  USA                 Constitution 5-dollar piece
+   gold     1    1988  Canada              Maple Leaf
+
+**'/gold/'** defines a matching criteria that will be used on every line of the file. If no command is specified, the default action is to print the matched lines. 
+
+This mimics the use of **grep** or **sed**, so why would one possibly need awk?
+
+**Now, suppose we want to list all the coins that were minted before 1980**. We invoke Awk as follows:
+
+.. code-block:: bash
+
+  $ awk '$3 < 1980 {print $3, "    ",$5,$6,$7,$8}' coins.txt
+
+::
+
+   1908      Franz Josef 100 Korona
+   1979      Krugerrand
+
+In the example above, we defined a matching criteria ``$3 < 1980``, so the  commands enclosed in the ``{print $3, " ",$5,$6,$7,$8}`` block **will be executed only when the criteria is met** - i.e. awk will print the values of columns 3,"    ",5,6,7, and 8. The columns are separated (defined) by white space (one ore more consecutive blanks) and addressed by the ``$`` sign i.e. ``$1`` is the value of the first column, ``$2`` - second etc. ``$0`` contains the whole line including the white spaces.
+
+What about some math? Can I manipulate or analyze the data?
+-----------------------------------------------------------
+
+
+
