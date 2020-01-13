@@ -1,6 +1,3 @@
-layout: page
-title: To awk or not to...
-
 # Why awk?
 
 The Enlightened Ones say that...
