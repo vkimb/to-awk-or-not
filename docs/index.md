@@ -1,6 +1,7 @@
-# To awk or not...
+layout: page
+title: To awk or not to...
 
-## Why awk?
+# Why awk?
 
 The Enlightened Ones say that...
 
@@ -15,7 +16,7 @@ The language is simple and Awk programs are generally very short.
 
 *source: (some years ago):* http://awk.info/?whygawk
 
-## Objectives
+# Objectives
 
 
 * The material on this site **is not a complete** guide or awk manual.
@@ -24,7 +25,7 @@ The language is simple and Awk programs are generally very short.
 * The page aims to promote this tool for use in every-days research work and urges you to find solutions yourself rather than expecting ready-made ones.
 * The material assumes that you are somewhat familiar with grep and sed.
 
-## What is awk?
+# What is awk?
 
 AWK is an **interpreted** programming language designed for text processing and typically used as a data extraction and reporting tool.
 
