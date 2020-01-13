@@ -1,3 +1,10 @@
+---
+layout: page
+title: Home
+nav_order: 1
+permalink: /
+---
+
 # Why awk?
 
 The Enlightened Ones say that...
