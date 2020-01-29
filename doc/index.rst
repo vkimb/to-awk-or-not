@@ -57,6 +57,6 @@ It is a **standard feature of most Unix-like** operating systems.
 
 
 .. _Wikipedia: https://www.wikipedia.org/
-.. |wiki_logo| image:: _images/WikiLogo.png
+.. |wiki_logo| image:: _static/WikiLogo.png
                :class: align-right
 .. include:: _static/common.rst                
