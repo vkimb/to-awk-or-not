@@ -2,16 +2,9 @@
 To awk or not...
 =========================================
 
-.. |br| raw:: html
-
-    <br>
-
-.. _gawk: https://www.gnu.org/software/gawk/
-.. _Wikipedia: https://www.wikipedia.org/
-
 Why awk?
 --------
-
+|hr|
 The Enlightened Ones say that... 
 
   * *You should never use C if you can do it with a script;*
@@ -35,13 +28,16 @@ Objectives
 
 What is awk?
 ------------
-AWK is an **interpreted** programming language designed for text processing and typically used as a data extraction and reporting tool.
 
-The AWK language is a **data-driven scripting language** consisting of a set of actions to be taken against streams of textual data - either run directly on files or used as part of a pipeline - for purposes of extracting or transforming text, such as producing formatted reports. The language extensively uses the string datatype, associative arrays (that is, arrays indexed by key strings), and regular expressions.
+|hr|
+
+AWK is an **interpreted** programming language designed for text processing and typically used as a data extraction and reporting tool. 
+
+|wiki_logo| The AWK language is a **data-driven scripting language** consisting of a set of actions to be taken against streams of textual data - either run directly on files or used as part of a pipeline - for purposes of extracting or transforming text, such as producing formatted reports. The language extensively uses the string datatype, associative arrays (that is, arrays indexed by key strings), and regular expressions. 
 
 AWK has a limited intended application domain, and was especially **designed to support one-liner programs**.
 
-It is a **standard feature of most Unix-like** operating systems.
+It is a **standard feature of most Unix-like** operating systems. 
 
 *source:* Wikipedia_
 
@@ -49,10 +45,15 @@ It is a **standard feature of most Unix-like** operating systems.
    :maxdepth: 2
    :hidden:
    
-   1.simple_examples
+   1.Simple_example
    2.Teasing_with_grep
    3.Shell_we_awk
    4.Brief_commands
    5.String_manipulation
    6.One_line_programs
 
+
+.. _Wikipedia: https://www.wikipedia.org/
+.. |wiki_logo| image:: _static/WikiLogo.png
+               :class: align-right
+.. include:: _static/common.rst                
