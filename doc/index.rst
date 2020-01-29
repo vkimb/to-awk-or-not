@@ -4,7 +4,9 @@ To awk or not...
 
 Why awk?
 --------
-|hr|
+
+- - -
+
 The Enlightened Ones say that... 
 
   * *You should never use C if you can do it with a script;*
@@ -13,7 +15,8 @@ The Enlightened Ones say that...
   * *Never use sed if you can do it with grep.*
 
 
-The language is simple and Awk programs are generally very short. |br|
+The language is simple and Awk programs are generally very short.
+
 **Awk is useful when the overhead of more sophisticated approaches is not worth the bother.**
 
 *source: (some years ago):* http://awk.info/?whygawk
@@ -29,7 +32,7 @@ Objectives
 What is awk?
 ------------
 
-|hr|
+- - -
 
 AWK is an **interpreted** programming language designed for text processing and typically used as a data extraction and reporting tool. 
 
@@ -54,6 +57,6 @@ It is a **standard feature of most Unix-like** operating systems.
 
 
 .. _Wikipedia: https://www.wikipedia.org/
-.. |wiki_logo| image:: _static/WikiLogo.png
+.. |wiki_logo| image:: _images/WikiLogo.png
                :class: align-right
 .. include:: _static/common.rst                
