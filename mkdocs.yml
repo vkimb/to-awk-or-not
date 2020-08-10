@@ -1,0 +1,28 @@
+site_name: To awk or not
+nav:
+  - Home: index.md
+  - 1.Simple examples: 1.Simple_example.md
+  - 2.Tesing with grep: 2.Teasing_with_grep.md
+  - 3.Shell we awk: 3.Shell_we_awk.md
+  - 4.Brief commands: 4.Brief_commands.md
+  - 5.String manipulation: 5.String_manipulation.md
+  - 6.One line programs: 6.One_line_programs.md
+  - Python vs. awk: Python_vs_awk.md
+  - Exercises:
+    - Exercises/Exercises.md
+theme: material
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.smartsymbols
+  - footnotes
+  - attr_list
+  - pymdownx.highlight:
+      use_pygments: true
+features:
+  - search.highlight
+#theme: readthedocs
