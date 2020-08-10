@@ -12,6 +12,12 @@ nav:
     - Warming up: Exercises/Exercises.md
     - 01.Simple arithmetic *: Exercises/01.Simple_arithmetic.md
     - 02.Data extraction *: Exercises/02.Data_extraction.md
+  - Fixed size fields: Other/Fixed_size_fields.md
+  - Backreferences: Other/Backreferences.md
+  - Multii-Line records: https://www.gnu.org/software/gawk/manual/html_node/Multiple-Line.html
+  - Localization problems: Other/Localization.md
+  - Awk vs. nawk vs. gawk: http://www.thegeekstuff.com/2011/06/awk-nawk-gawk/
+  - GitHub & Binder: Other/Binder.md
 theme: material
 markdown_extensions:
   - pymdownx.details
@@ -24,13 +30,23 @@ markdown_extensions:
   - footnotes
   - attr_list
   - def_list
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 features:
   - search.highlight
+repo_url: https://github.com/pmitev/to-awk-or-not
 #theme: readthedocs
