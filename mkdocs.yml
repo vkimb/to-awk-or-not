@@ -11,6 +11,7 @@ nav:
   - Exercises:
     - Warming up: Exercises/Exercises.md
     - 01.Simple arithmetic *: Exercises/01.Simple_arithmetic.md
+    - 02.Data extraction *: Exercises/02.Data_extraction.md
 theme: material
 markdown_extensions:
   - pymdownx.details
