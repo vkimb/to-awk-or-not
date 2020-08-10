@@ -1,4 +1,4 @@
-# Exercises
+# Exercises - warming up
 
 ## Task 1. Make an awk script to calculate:
     a) sum of the values
@@ -17,13 +17,44 @@ num.dat
 7
 3
 ```
-Possible solutions to the tasks could be found somewhere on this page:
+
+??? "Possible solutions"
+    1.a)
+    ``` awk
+    $ awk '{sum= sum+$1} END{print sum}' num.dat
+    33
+    ```
+    
+    1.b)
+    ``` awk
+    $ awk '{sum= sum+$1} END{print sum/NR}' num.dat
+    5.5
+    ```
+    
+    1.c) NR==1 {max=$1} makes sure that you have reasonable initial value. What could go wrong if you skip it?
+    ``` awk
+    $ awk 'NR==1 {max=$1}  {if (max < $1) max=$1}  END{print max}' num.dat
+    9
+    ```
+    
+    1.d) Possible solution (notice that the first number is the value of the first column):
+    ``` awk
+    $ awk '{print $1-prev;prev=$1}' num.dat
+    2
+    2
+    4
+    1
+    -2
+    -4
+    ```
+    
+    Can you improve the script to avoid the problem with the first line?
 
 
 ## Task 2. Providing you have the following data
 
 10.dat
-```text
+``` text
 67
 4
 33
@@ -39,7 +70,7 @@ Possible solutions to the tasks could be found somewhere on this page:
 Can you write a script to print the cumulative sum i.e. on each row, next to the original value, you print the sum of all above values?
 
 Output:
-```text
+``` text
 67 67
 4 71
 33 104
@@ -52,3 +83,7 @@ Output:
 8 521
 ```
 
+??? "Possible solution"
+    ``` awk
+    $ awk '{sum=sum+$1; print $1,sum}' 10.dat
+    ```

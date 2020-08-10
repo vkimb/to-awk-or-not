@@ -9,7 +9,8 @@ nav:
   - 6.One line programs: 6.One_line_programs.md
   - Python vs. awk: Python_vs_awk.md
   - Exercises:
-    - Exercises/Exercises.md
+    - Warming up: Exercises/Exercises.md
+    - 01.Simple arithmetic *: Exercises/01.Simple_arithmetic.md
 theme: material
 markdown_extensions:
   - pymdownx.details
@@ -21,8 +22,14 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - footnotes
   - attr_list
+  - def_list
   - pymdownx.highlight:
       use_pygments: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 features:
   - search.highlight
 #theme: readthedocs
