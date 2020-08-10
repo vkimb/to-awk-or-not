@@ -18,6 +18,7 @@ nav:
   - Localization problems: Other/Localization.md
   - Awk vs. nawk vs. gawk: http://www.thegeekstuff.com/2011/06/awk-nawk-gawk/
   - GitHub & Binder: Other/Binder.md
+  - About: About.md
 theme: material
 markdown_extensions:
   - pymdownx.details
