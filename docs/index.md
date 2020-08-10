@@ -1,10 +1,3 @@
----
-layout: page
-title: Home
-nav_order: 1
-permalink: /
----
-
 # Why awk?
 
 The Enlightened Ones say that...
@@ -21,7 +14,6 @@ The language is simple and Awk programs are generally very short.
 *source: (some years ago):* http://awk.info/?whygawk
 
 # Objectives
-
 
 * The material on this site **is not a complete** guide or awk manual.
 * The purpose of this site is to give an overview of the capabilities of the awk language and **to underline** some particular **strengths or disadvantages
