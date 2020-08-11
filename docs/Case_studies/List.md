@@ -15,8 +15,10 @@ Here I am planing to collect most of my and contributed awk scripts, for educati
   _worth to know if working often with files in multi-fasta format_
 * **bio:  [Multiline fasta to single line fasta](Multi2single_fasta.md)**  
   _single cryptic-looking line that will decriphered during the workshop_
-* bio:  Sequence clustering with awk
-* math: Discrete histogram
+* **bio:  [Sequence clustering with awk](Sequence_clustering.md)**  
+  _apllication of the multiple files approach - contribution by Martín González Buitrón_
+* **math: [Discrete histogram](Discrete_histogram.md)**  
+  _very handy discrete histogram awk code_
 * math: Gaussian smearing
 * math: Linear interpolation
 * phys: Dipole moment example
