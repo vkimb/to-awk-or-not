@@ -8,15 +8,15 @@
 
 Copy/paste the numbers in a file for convenience.
 
-num.dat
-```text
-2
-4
-8
-9
-7
-3
-```
+!!! note "num.dat"
+    ```text
+    2
+    4
+    8
+    9
+    7
+    3
+    ```
 
 ??? "Possible solutions"
     1.a)
@@ -53,19 +53,19 @@ num.dat
 
 ## Task 2. Providing you have the following data
 
-10.dat
-``` text
-67
-4
-33
-53
-21
-99
-88
-69
-79
-8
-```
+!!! note "10.dat"
+    ``` text
+    67
+    4
+    33
+    53
+    21
+    99
+    88
+    69
+    79
+    8
+    ```
 
 Can you write a script to print the cumulative sum i.e. on each row, next to the original value, you print the sum of all above values?
 

@@ -1,13 +1,13 @@
 # Advanced data analisys ****
 You are given a file with numbers on each row - 5 in this case. 
 
-data1
-```
-1 2 3 4 5
-1 3 5 7 9
-1 2 4 5 0
-2 6 7 8 9
-```
+!!! note "data1"
+    ```
+    1 2 3 4 5
+    1 3 5 7 9
+    1 2 4 5 0
+    2 6 7 8 9
+    ```
 
 Then you are given 5 numbers (let's say "1, 3, 5, 6 and 7") and you want to find how many of these numbers are matching a number on each line - think like you are about to check your lottery tickets ;-)
 
@@ -19,14 +19,14 @@ Then you are given 5 numbers (let's say "1, 3, 5, 6 and 7") and you want to find
     ```
 Can you improve the script so it could pick up the numbers from the first line, i.e. the winning numbers are on the first line?
 
-data2
-```
-1 3 5 6 7
-1 2 3 4 5
-1 3 5 7 9
-1 2 4 5 0
-2 6 7 8 9
-```
+!!! note "data2"
+    ```
+    1 3 5 6 7
+    1 2 3 4 5
+    1 3 5 7 9
+    1 2 4 5 0
+    2 6 7 8 9
+    ```
 
 
 ??? "Possible solution"

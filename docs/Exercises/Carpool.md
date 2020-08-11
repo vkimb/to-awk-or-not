@@ -3,16 +3,16 @@ Some friends have organized [carpool](https://en.wikipedia.org/wiki/Carpool) the
 At the beginning of each accounting period, they write down the numbers of the car's [odometer](https://en.wikipedia.org/wiki/Odometer).  
 Every time somebody drives the car, she/he writes down the numbers when the car is returned and hers/his name.
 
-carpool.dat
-```
-17000  start
-17100  Daniel
-17220  Sara
-17310  David
-17410  Daniel
-17550  Sara
-17800  David
-```
+!!! note "carpool.dat"
+    ```
+    17000  start
+    17100  Daniel
+    17220  Sara
+    17310  David
+    17410  Daniel
+    17550  Sara
+    17800  David
+    ```
 
 Try to write an awk script that calculates what distance has everyone traveled with the car.
 Hints: 

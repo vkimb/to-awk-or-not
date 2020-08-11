@@ -23,15 +23,15 @@ Note: if you are looking just to rename the entries in a Fasta file, perhaps the
 
 Here is another example, where I can mention some disadvantages with awk (or perhaps I could not find how to do it properly).
 
-filedata
-```
-/home/ux/user/z156256
-/home/ux/user/z056254
-/home/lx/user/z106253
-/home/ux/user/z150252
-/home/mp/user/z056254
-/home/lx/user/z106253
-```
+!!! note "filedata"
+    ```
+    /home/ux/user/z156256
+    /home/ux/user/z056254
+    /home/lx/user/z106253
+    /home/ux/user/z150252
+    /home/mp/user/z056254
+    /home/lx/user/z106253
+    ```
 
 sed
 ``` bash
