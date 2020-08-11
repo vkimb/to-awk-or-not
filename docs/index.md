@@ -8,14 +8,15 @@ Next scheduled workshop</br>
 ---
 <font color="red"><strong>Awk is useful when the overhead of more sophisticated approaches is not worth the bother.</strong></font>
 
-The Enlightened Ones say that...
-
-  * *You should never use C if you can do it with a script;*
-  * *You should never use a script if you can do it with awk;*
-  * *Never use awk if you can do it with sed;*
-  * *Never use sed if you can do it with grep.*
-
-*source: [(some years ago)](http://web.archive.org/web/20160324050308/http://awk.info/?whygawk "Way back to 2016") http://awk.info/?whygawk
+!!! quote
+    The Enlightened Ones say that...
+    
+      * _You should never use **C** if you can do it with a **script**;_
+      * _You should never use a script if you can do it with **awk**;_
+      * _Never use **awk** if you can do it with **sed**;_
+      * _Never use **sed** if you can do it with **grep**._
+    
+    *source: [(some years ago)](http://web.archive.org/web/20160324050308/http://awk.info/?whygawk "Way back to 2016") http://awk.info/?whygawk
 
 ## Objectives
 ---

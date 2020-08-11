@@ -12,6 +12,14 @@ nav:
     - Warming up: Exercises/Exercises.md
     - 01.Simple arithmetic *: Exercises/01.Simple_arithmetic.md
     - 02.Data extraction *: Exercises/02.Data_extraction.md
+    - 03.Data extraction **: Exercises/03.Data_extraction.md
+    - 04.Data manipulation **: Exercises/04.Data_manipulation.md
+    - 05.Easy tricks *: Exercises/05.Easy_tricks.md
+    - 06.Bioinformaticians corner *: Exercises/06.Bioinformaticians_corner.md
+    - Advanced data analysis ****: Exercises/Advanced_data_analysis.md
+    - Carpool ***: Exercises/Carpool.md
+    - Difficult to extract data ****: Exercises/Dificult_data.md
+    - Scrubing a web page **: Exercises/Scrubbing.md
   - Fixed size fields: Other/Fixed_size_fields.md
   - Backreferences: Other/Backreferences.md
   - Multii-Line records: https://www.gnu.org/software/gawk/manual/html_node/Multiple-Line.html
@@ -21,6 +29,7 @@ nav:
   - About: About.md
 theme: material
 markdown_extensions:
+  - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.inlinehilite
