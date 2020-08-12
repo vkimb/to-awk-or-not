@@ -11,6 +11,7 @@ You are given a file with numbers on each row - 5 in this case.
 
 Then you are given 5 numbers (let's say "1, 3, 5, 6 and 7") and you want to find how many of these numbers are matching a number on each line - think like you are about to check your lottery tickets ;-)
 
+The solution bellow is using an "assicative arrays" trick to make it easier to loop over the reference numbers.
 
 ??? "Possible solution"
     Not very elegant but illustrates nicely a convenient use of associated arrays as list - if ($i in n) :
