@@ -25,10 +25,14 @@ nav:
   - "= Case Studies =": Case_studies/List.md
   - Fixed size fields: Other/Fixed_size_fields.md
   - Backreferences: Other/Backreferences.md
-  - Multii-Line records: https://www.gnu.org/software/gawk/manual/html_node/Multiple-Line.html
+  - Multi-Line records: https://www.gnu.org/software/gawk/manual/html_node/Multiple-Line.html
+  - Awk arrays: arrays.md
+  - Awk or Bash: awk_bash.md
   - Localization problems: Other/Localization.md
   - Awk vs. nawk vs. gawk: http://www.thegeekstuff.com/2011/06/awk-nawk-gawk/
   - GitHub & Binder: Other/Binder.md
+  - Handy to have: handy.md
+  - Links: Links.md
   - About: About.md
 theme: material
 markdown_extensions:
