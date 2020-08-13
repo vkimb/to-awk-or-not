@@ -2,11 +2,11 @@
 
 The short answer - keep using bash but have a look at of some awk neat features that might come in handy.
 
-`!#awk cmd= "ls -lrt"` - lets have the command stored for convenience
+`#!awk cmd= "ls -lrt"` - lets have the command stored for convenience
 
-`!#awk system(cmd)` - will make a system call and execute the command, while sending the output to standard output
+`#!awk system(cmd)` - will make a system call and execute the command, while sending the output to standard output
 
-`!#awk cmd | getline` - will do the same but you will read the first line from the output.
+`#!awk cmd | getline` - will do the same but you will read the first line from the output.
 
 ``` awk
 # then let's read all lines and do something

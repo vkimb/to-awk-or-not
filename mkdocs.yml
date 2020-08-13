@@ -1,4 +1,5 @@
 site_name: To awk or not
+repo_url: https://github.com/pmitev/to-awk-or-not
 nav:
   - Home: index.md
   - 1.Simple examples: 1.Simple_example.md
@@ -32,9 +33,15 @@ nav:
   - Awk vs. nawk vs. gawk: http://www.thegeekstuff.com/2011/06/awk-nawk-gawk/
   - GitHub & Binder: Other/Binder.md
   - Handy to have: handy.md
+  - tinytils: tinyutils.md
   - Links: Links.md
   - About: About.md
-theme: material
+theme: 
+  name: material
+#  features:
+#    - search.highlight
+#plugins:
+#  - search:
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -64,9 +71,6 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-features:
-  - search.highlight
-repo_url: https://github.com/pmitev/to-awk-or-not
 google_analytics:
   - UA-175317500-1
   - auto

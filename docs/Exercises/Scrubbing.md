@@ -1,6 +1,7 @@
 # Scrubbing a web page **
 !!! warning
     Unfortunately, the web engine is changing quite often and even the address might not be correct, so it might not be possible to solve the problem as described...
+    To make it work, please use a copy of the page at [https://web.archive.org/](https://web.archive.org/) https://web.archive.org/web/20190323025902/http://www.kemi.uu.se/about-us/people-angstrom/ 
 
 Here is another example when awk comes handy. You can get some information on a web page which is more or less well structured and you want to make some statistics from the numbers you can extract. Disclaimer: there are better tools to this but honestly they come with their own overhead...
 
@@ -8,8 +9,8 @@ For instance, on the following web address http://www.kemi.uu.se/about-us/people
 
 To make the example as general as possible let's work with the HTML source code of the web page (do not worry if you are not familiar with HTML). There are many ways to get the web page from the command line but let's consider  two standard tools curl or wget. The commands below will produce identical output with a lot of irrelevant HTML code.
 ``` bash
-$ curl -s https://www.kemi.uu.se/about-us/dept-of-chem-ang/people/
-$ wget -O - https://www.kemi.uu.se/about-us/dept-of-chem-ang/people/
+$ curl -s http://www.kemi.uu.se/about-us/people-angstrom/
+$ wget -O - http://www.kemi.uu.se/about-us/people-angstrom/
 ```
 
 ``` html
@@ -44,5 +45,44 @@ Can you come with a solution (awk is a good choice) on how to count how many peo
 
 ??? "Possible solution"
     ``` awk
-    curl -s http://www.kemi.uu.se/about-us/people-angstrom/ | awk ' /emp-title/{getline;title[$0]++} END{for (i in title) print title[i],i}'
+    curl -s https://web.archive.org/web/20190323025902/http://www.kemi.uu.se/about-us/people-angstrom/ | awk ' /emp-title/{getline;title[$0]++} END{for (i in title) print title[i],i}'
+    ```
+    ```
+    1 computer coordinator
+    3 Assistant Professor
+    1 administrator
+    8 assistant undergoing research training
+    35 visiting researcher
+    3 senior professor
+    1 administrative manager
+    1 administrative assistant
+    1 financial coordinator
+    10 professor emeritus
+    44 post doctoral
+    1 course administrator
+    20 degree project worker
+    4 master's thesis students
+    1 personnel coordinator
+    1 systems administrator
+    3 economist
+    16 professor
+    4 research engineer
+    38 researcher
+    1 instrument maker
+    1 project coordinator
+    1 hr-generalist
+    1 information officer
+    1 technician
+    79 doctoral/PhD student
+    1 personnel administrator
+    1 senioruniversitetlektor i oorganisk kemi 
+    6 guest doctoral student
+    4 visiting professor
+    23 senior lecturer
+    4 associate senior lecturer
+    3 research assistant
+    20 visiting student
+    6 senior research engineer
+    2 financial administrator
+    3 visiting senior lecturer
     ```

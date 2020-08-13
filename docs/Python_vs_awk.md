@@ -1,6 +1,6 @@
 #Python vs. awk
 
-Well, the title is misleading. I am not going to argue which language is better. Obviously, Python is more powerful and has vastly more features. Instead, here I have selected a particular case where (I think) the use of Python is not a good choice at all.
+Well, the title is misleading. I am not going to argue which language is better. Obviously, Python is more powerful and has vastly more features. Instead, here I have selected a particular case where (_I think_) the use of Python is not a good choice at all.
 
 Some time ago, I needed to extract frequency data from a Gaussian calculation. As many of us do, I searched the Net for already existing solutions, after all I do not want to rediscover the wheel... 
 Luckily, the very first hit was a very well written Python script that does the job. Here is the link to the [original page](http://verahill.blogspot.se/2013/09/514-extracting-frequency-data-from.html) with the solution. I have to say that ~50 lines of code were a bit too much for me and for this particular task. Here I will paste the code just to support my case.
