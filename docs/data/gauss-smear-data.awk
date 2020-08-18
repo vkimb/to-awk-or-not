@@ -1,4 +1,4 @@
-#!/bin/awk -f
+#!/usr/bin/awk -f
 BEGIN{
   FWHM=30; # Default smearing if none is provided on the command line
   FWHM= FWHM/2.35482
