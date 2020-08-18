@@ -24,6 +24,9 @@ nav:
     - String manipulation **: Exercises/String_manipulation.md
     - Simple linear regresion ***: Exercises/Linear_regression.md
   - "= Case Studies =": Case_studies/List.md
+  - Furthermore:
+    - User defined functions: Furthermore/User_defined_functions.md
+    - Parameters on the command line : Furthermore/Command_params.md
   - Fixed size fields: Other/Fixed_size_fields.md
   - Backreferences: Other/Backreferences.md
   - Multi-Line records: https://www.gnu.org/software/gawk/manual/html_node/Multiple-Line.html

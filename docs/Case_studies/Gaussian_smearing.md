@@ -3,7 +3,7 @@ Sometimes it is useful or necessary to apply Gaussian smearing on your discrete 
 
 Here is a code that shows how it could be done in awk (_illustrating the use of functions as well_).
 
-``` awk
+``` awk linenums="1"
 #!/bin/awk -f
 BEGIN{
   FWHM=30; # Default smearing if none is provided on the command line
