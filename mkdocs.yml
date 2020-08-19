@@ -27,6 +27,7 @@ nav:
   - More with awk:
     - User defined functions: More_awk/User_defined_functions.md
     - Parameters on the command line : More_awk/Command_params.md
+    - Input/Output to external program: More_awk/Input_output.md
     - Running averages: More_awk/Running_average.md
   - Fixed size fields: Other/Fixed_size_fields.md
   - Backreferences: Other/Backreferences.md
