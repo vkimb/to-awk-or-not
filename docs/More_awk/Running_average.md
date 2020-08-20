@@ -27,7 +27,7 @@ Here is how the result from the script looks like.
 
 ![temp2](../images/run-average1.png)
 
-This plot was generated from the Gnuplot command line 
+This plot is generated from the Gnuplot command line 
 ``` gnuplot
 plot [:2000] "temp.dat" w l, \
              "< ./run-average.awk size=100 temp.dat" w l lw 3 lc rgb "blue", \

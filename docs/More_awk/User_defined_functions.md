@@ -2,7 +2,8 @@
 
 > Related Awk [documentation](https://www.gnu.org/software/gawk/manual/html_node/User_002ddefined.html)
 
-Usually at this point (_looking on how to write own functions_) you have a working script (_I doubt you want to do this on one line_) and you want to wrap your repetitive task in a function call... The User defined function syntax is as follows
+Usually at this point (_looking on how to write own functions_) you have a working script (_I doubt you want to do this on one line_) and you want to wrap your repetitive task in a function call...  
+The User defined function syntax is as follows
 
 ``` awk
 function name([parameter-list])
@@ -13,7 +14,8 @@ function name([parameter-list])
 }
 ```
 
-Here is simple example. It is rather surprising but awk dows not have funtion to return athe absolute value of a number. Here we can define one ourselfs.
+Here is a simple example.  
+It is rather surprising but awk dows not have funtion to return athe absolute value of a number.
 
 ``` awk
 function abs(x){
@@ -40,7 +42,8 @@ function gauss(x0,x,c){
 }
 ```
 
-The function returns the value for the Gaussian for a point $x$ away from the center. For large $(x-x0)^2$ the `exp()` was crashing, so I needed to add a condition which makes sure that for these very large numbers the function does not call the `exp(...)` but return `0.0` instead. The function is called within a double loop on line 23
+The function returns the value for the Gaussian for a point $x$ away from the center. For large $(x-x0)^2$ the `exp()` was crashing, so I needed to add a condition which makes sure that for these very large numbers the function does not call the `exp(...)` but returns directly `0.0` instead. The function is called within a double loop on line 23
+
 ``` awk linenums="23"
       data[i]= data[i] + gauss(freq[f],i,FWHM);
 ```

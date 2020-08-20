@@ -1,6 +1,6 @@
 # Trick to pass paramters on the command line
 
-The common way to pass options and parameters to an Awk script is via the awk option 
+The common way to pass options and parameters to an Awk script is via the awk option `-v varname=value` 
 
 ```  bash
 $ script.awk -v variablename1=value2 -v variablename=value2 filename1 filename2
@@ -14,7 +14,7 @@ $ script.awk filename parameter1 parameter2
 
 Without some precautions, parameter1 and parameter2 will be treated as file names...
 
-When Awk starts the information from the command line will be stored in two internal variables `#!awk ARGV` - array with argument values and `#!awk ARGC` - scalar variable with the count of elements in `#!awk ARGV`. `#!awk ARGV[0]` will contain the name of the script itself (`script.awk` in this example), `#!awk ARGV[1]` - the name of the first file on the command line etc.
+When Awk starts, the information from the command line will be stored in two internal variables `#!awk ARGV` - array with argument values and `#!awk ARGC` - scalar variable with the count of elements in `#!awk ARGV`. `#!awk ARGV[0]` will contain the name of the script itself (`script.awk` in this example), `#!awk ARGV[1]` - the name of the first file on the command line etc.
 
 ``` awk
 ARGV[0]="script.awk"

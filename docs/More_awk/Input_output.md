@@ -25,6 +25,13 @@ awk: Codename:  bionic
 !!! note
     `No LSB modules are available.` was sent to `/dev/stderr` by `lsb_release` and awk newer got to read it on first place.
 
+!!! warning
+    Kepp in mind that `getline` will read one line and store it in `$0` by replacing the content from the common lines read by awk. 
+    To avoid this use `getline variablename` to store the line in new variable. [more...](https://www.gnu.org/software/gawk/manual/html_node/Getline.html)
+
+!!! info
+    Awk can `getline` directly from another file instead of the one that awk is currently reading - `getline < filename` [more...](https://www.gnu.org/software/gawk/manual/html_node/Getline.html)
+
 
 This second variant will produce the same result, but also illustrates the use of `#!awk close()`. 
 
@@ -36,7 +43,7 @@ This second variant will produce the same result, but also illustrates the use o
       while (cmd | getline){
         print "awk:",$0
       }
-    close(cmd)
+      close(cmd)
     }
     ```
 
@@ -56,7 +63,7 @@ This version will print only what we need.
       while (cmd | getline){
         if($1 == "Codename:") print $2
       }
-    close(cmd)
+      close(cmd)
     }
     ```
 
@@ -106,3 +113,18 @@ There is a complication, though. Python is an interactive program and expects en
 The solution to this is to call `#!awk close(cmd,"to")` function on line 6, deeply buried in the awk [documentation](https://www.gnu.org/software/gawk/manual/html_node/Two_002dway-I_002fO.html).
 
 This last example covers more or less the most complicated situation. Usually one can get away with fewer lines. Note also that we `getline`-ed only once since we wanted only the first line in the output. This might not be the case and you might need to run `#!awk while` loop to read all lines.
+
+---
+
+Summary of the eight variants of getline, listing which predefined variables are set by each one, and whether the variant is standard or a gawk extension.
+
+| Variant                 |Effect                       | awk / gawk |
+|-------------------------|-----------------------------|------------|
+| getline                 |Sets $0, NF, FNR, NR, and RT	| awk        |
+| getline var             | Sets var, FNR, NR, and RT   | awk        |
+| getline < file          |  Sets $0, NF, and RT        | awk        |
+| getline var < file      | Sets var and RT             | awk        |
+| command \| getline      | Sets $0, NF, and RT         | awk        |
+| command \| getline var  | Sets var and RT             | awk        |
+| command \|& getline     | Sets $0, NF, and RT         | gawk       |
+| command \|& getline var | Sets var and RT             | gawk       |
