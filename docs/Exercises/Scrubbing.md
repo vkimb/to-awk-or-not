@@ -27,8 +27,10 @@ $ wget -O - http://www.kemi.uu.se/about-us/people-angstrom/
 ```
 
 
-Luckily, all employee titles are on a new line after a line with the following content `#!html <span class="emp-title">` .
-``` bash
+Luckily, all employee titles are on a new line after a line with the following content `#!html <span class="emp-title">` .  
+Let's `grep` for this string and print the line bellow as well with the `-A 1` option.
+
+``` bash hl_lines="1"
 curl -s http://www.kemi.uu.se/about-us/people-angstrom/ | grep -A 1 "emp-title" | head
 <span class="emp-title">
 visiting researcher
