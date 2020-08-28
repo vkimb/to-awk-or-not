@@ -58,6 +58,6 @@ query_code, query_length, cluster_number_in_file_1, cluster_size_in_file_1, targ
 For details, look into the code available for download at the bottom of this page. The role of each line is commented for easier understanding.
 
 !!! example "Example files"
-   [get_seq_jumping_description_from_CDHIT_clstr_info.awk](../data/get_seq_jumping_description_from_CDHIT_clstr_info.awk)  
-   [2020-03-13_cdhit_ide_0.98_cov_0.90.clstr](../data/2020-03-13_cdhit_ide_0.98_cov_0.90.clstr)  
-   [2020-03-13_cdhit_ide_1.00_cov_0.98.clstr](../data/2020-03-13_cdhit_ide_1.00_cov_0.98.clstr)
+    * [get_seq_jumping_description_from_CDHIT_clstr_info.awk](../data/get_seq_jumping_description_from_CDHIT_clstr_info.awk)  
+    * [2020-03-13_cdhit_ide_0.98_cov_0.90.clstr](../data/2020-03-13_cdhit_ide_0.98_cov_0.90.clstr)  
+    * [2020-03-13_cdhit_ide_1.00_cov_0.98.clstr](../data/2020-03-13_cdhit_ide_1.00_cov_0.98.clstr)

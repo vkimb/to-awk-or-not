@@ -1,5 +1,5 @@
 # Difficult to extract data ****
-Let's assume that we get a such an output from a Python program. `#!python [2, 261, 262]` is a list variable that is easy to print but kind off difficult to deal with in this form...
+Let's assume that we get such an output from a Python program. `#!python [2, 261, 262]` is a list variable that is easy to print but kind off difficult to deal with in this form...
 ``` python
 1 [2, 261, 262] 4.22143226361
 2 [96, 447, 448] 3.9916056595

@@ -1,4 +1,4 @@
-#!/bin/awk -f
+#!/usr/bin/awk -f
 # Author Pavlin Mitev 
 # Version 2015.10.26
 BEGIN{
