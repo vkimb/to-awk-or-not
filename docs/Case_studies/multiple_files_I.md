@@ -34,14 +34,14 @@ Below, it is just one possible way to do it. First we need to have a list of all
 !!! example "script.awk"
     ``` awk
     #!/usr/bin/awk -f
-    
+
     {
       names[$1]= 1;
-      data[$1,ARGIND]= $2
+      data[$1][ARGIND]= $2
     }
     
     END {
-      for (i in names) print i"\t\t"data[i,1]"\t\t"data[i,2]
+      for (i in names) print i"\t\t"data[i][1]"\t\t"data[i][2]
     }
     ```
 
@@ -52,12 +52,12 @@ Run the script like this:
 ```
 
 The script runs over the two files in a row and on each line it uses associative arrays to collect the names from the first column in `#!awk names[$1]`.
-`#!awk data[$1,ARGIND]` is two dimensional array with indexes [name, number of current file/argument]. At the end we will have elements like this:
+`#!awk data[$1][ARGIND]` is two dimensional array with indexes [name][ number of current file/argument]. At the end we will have elements like this:
 
 ``` awk
 ...
-data["Sven",1] = 56
-data["Sven",2] = "Sunday"
+data["Sven"][1] = 56
+data["Sven"][2] = "Sunday"
 ...
 ```
 
@@ -90,3 +90,45 @@ Sven 56 Sunday
     Note that the files need to be sorted by the field they will be joined, since the program is trying to avoid loading the whole data in the memory. If the data is sorted, awk also can join the data without loading it into the memory.
     [http://unix.stackexchange.com/questions/194968/why-isnt-this-awk-command-doing-a-full-outer-join](http://unix.stackexchange.com/questions/194968/why-isnt-this-awk-command-doing-a-full-outer-join)  
     _Credits to Mahesh Panchal for the tip_
+
+## Exercise
+
+Copy/paste the text in to two files with the suggested names
+
+`scientific`
+```
+2       |       Bacteria        |       Bacteria <bacteria>     |       scientific name |
+29      |       Myxococcales    |               |       scientific name |
+139     |       Borreliella burgdorferi |               |       scientific name |
+161     |       Treponema pallidum subsp. pallidum      |               |       scientific name |
+168     |       Treponema pallidum subsp. pertenue      |               |       scientific name |
+356     |       Rhizobiales     |               |       scientific name |
+638     |       Arsenophonus nasoniae   |               |       scientific name |
+```
+
+`genbank`
+```
+2       |       eubacteria      |               |       genbank common name     |
+29      |       fruiting gliding bacteria       |               |       genbank common name     |
+139     |       Lyme disease spirochete |               |       genbank common name     |
+161     |       syphilis treponeme      |               |       genbank common name     |
+168     |       yaws treponeme  |               |       genbank common name     |
+356     |       rhizobacteria   |               |       genbank common name     |
+638     |       son-killer infecting Nasonia vitripennis        |               |       genbank common name     |
+```
+
+Can you join the information from both files to collect the data in better format?
+
+`ID | scientific name | genbank common name`
+
+```
+2 | Bacteria | eubacteria
+29 | Myxococcales | fruiting gliding bacteria
+139 | Borreliella burgdorferi | Lyme disease spirochete
+```
+
+Leave the extra blanks for the first attempt. We will use this problem (cleaning the remaining spaces before and after) to introduce user defined functions.
+
+!!! hint
+    Using `FILENAME` might come handy.
+
